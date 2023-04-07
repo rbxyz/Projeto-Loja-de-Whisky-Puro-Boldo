@@ -1,0 +1,144 @@
+/* Definição das cores */
+:root {
+	--cor-primaria: #000000;
+	--cor-secundaria: #d4af37;
+}
+
+/* Estilização do header */
+header {
+	background-color: var(--cor-primaria);
+	color: rgb(202, 151, 9);
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3rem;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	border-bottom: 2px solid var(--cor-secundaria);
+}
+
+/* Estilização das seções */
+section {
+	padding: 40px 20px;
+}
+
+section h2 {
+	margin-top: 0;
+	font-size: 2rem;
+	color: var(--cor-primaria);
+	text-align: center;
+}
+
+section p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+section ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+/* Estilização do formulário de compra */
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+	color: var(--cor-primaria);
+}
+
+form input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+}
+
+form input[type="submit"] {
+	background-color: var(--cor-secundaria);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+/* PARA BORDA NA CAIXA INPUT NOME   */
+form input[type="text"] {
+    border: 1px solid #d4af37;
+}
+form input[type="email"] {
+    border: 1px solid #d4af37;
+}
+form input[type="number"] {
+    border: 1px solid #d4af37;
+}
+input[type="submit"]:hover {
+    background-color: #020101;
+  }
+  /* PARA MUDAR A COR DAS CARD
+  Este código define uma nova cor de fundo da card quando o mouse passa por cima dela.
+    Você pode personalizar a cor de fundo de acordo com suas preferências.
+    Certifique-se de que o seletor :hover esteja definido para a classe "card"
+    para que a cor de fundo mude apenas para os elementos que possuem essa classe.
+ */
+  .card:hover {
+    background-color: rgb(190, 190, 10);
+  }
+  
+
+/* Estilização do footer */
+footer {
+	background-color: var(--cor-primaria);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 1.2rem;
+}
+.container {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
